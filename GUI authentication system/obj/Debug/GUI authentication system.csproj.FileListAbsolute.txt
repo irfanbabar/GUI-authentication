@@ -1,0 +1,10 @@
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\bin\Debug\GUI authentication system.exe.config
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\bin\Debug\GUI authentication system.exe
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\bin\Debug\GUI authentication system.pdb
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.csprojResolveAssemblyReference.cache
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.registrationBox.resources
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Properties.Resources.resources
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.csproj.GenerateResource.Cache
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.exe
+c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.pdb
+C:\Users\Furqan Nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Form2.resources
