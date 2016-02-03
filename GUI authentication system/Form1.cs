@@ -40,29 +40,30 @@ namespace GUI_authentication_system
 
         private void registrationBox_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(@"\Users\Furqan Nadeem\Desktop\10350990_856380721074583_5549273632151111387_n.jpg");
-            pictureBox1.ImageLocation = @"\Users\Furqan Nadeem\Desktop\10350990_856380721074583_5549273632151111387_n.jpg";
 
-            pictureBox2.Image = Image.FromFile(@"\Users\Furqan Nadeem\Desktop\10521377_856381414407847_6994074695486298470_n.jpg");
-            pictureBox2.ImageLocation = @"\Users\Furqan Nadeem\Desktop\10521377_856381414407847_6994074695486298470_n.jpg";
 
-            pictureBox3.Image = Image.FromFile(@"\Users\Furqan Nadeem\Desktop\10921704_852292771483378_2006541120_n.jpg");
-            pictureBox3.ImageLocation = @"\Users\Furqan Nadeem\Desktop\10921704_852292771483378_2006541120_n.jpg";
+            pictureBox1.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10350990_856380721074583_5549273632151111387_n.jpg");
+            pictureBox1.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10350990_856380721074583_5549273632151111387_n.jpg";
 
-            pictureBox4.Image = Image.FromFile(@"\Users\Furqan Nadeem\Desktop\10982486_848584431854212_7586413611598786777_n.jpg");
-            pictureBox4.ImageLocation = @"\Users\Furqan Nadeem\Desktop\10982486_848584431854212_7586413611598786777_n.jpg";
+            pictureBox2.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10521377_856381414407847_6994074695486298470_n.jpg");
+            pictureBox2.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10521377_856381414407847_6994074695486298470_n.jpg";
 
-            pictureBox5.Image = Image.FromFile(@"\Users\Furqan Nadeem\Desktop\10999525_856381197741202_8803115981809302337_n.jpg");
-            pictureBox5.ImageLocation = @"\Users\Furqan Nadeem\Desktop\10999525_856381197741202_8803115981809302337_n.jpg";
 
-            pictureBox6.Image = Image.FromFile(@"\Users\Furqan Nadeem\Desktop\11008833_852292454816743_500703451_n.jpg");
-            pictureBox6.ImageLocation = @"\Users\Furqan Nadeem\Desktop\11008833_852292454816743_500703451_n.jpg";
+            pictureBox3.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10999525_856381197741202_8803115981809302337_n.jpg");
+            pictureBox3.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10999525_856381197741202_8803115981809302337_n.jpg";
 
-            this.Visible = false;
-            Form2 frm = new Form2();
-            frm.Show();
-            this.Hide();
 
+            pictureBox4.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10982486_848584431854212_7586413611598786777_n.jpg");
+            pictureBox4.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10982486_848584431854212_7586413611598786777_n.jpg";
+
+            pictureBox5.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11005712_877783125598564_1226127916_n.jpg");
+            pictureBox5.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11005712_877783125598564_1226127916_n.jpg";
+
+            pictureBox6.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11008933_852292438150078_241601339_n.jpg");
+            pictureBox6.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11008933_852292438150078_241601339_n.jpg";
+
+            //Form3 fm = new Form3();
+            //fm.ShowDialog();
         }
 
         private void EmailLabel_Click(object sender, EventArgs e)
@@ -76,8 +77,8 @@ namespace GUI_authentication_system
         }
 
         private void SubmitBtn_Click(object sender, EventArgs e)
-        {            
-
+        {
+            
             string ServerInformation = "server=FURQANNADEEM-PC; Trusted_Connection=yes;"+
                                        "database=GUIDATABASE; connection timeout=30;";
             SqlConnection connection = new SqlConnection(ServerInformation);
@@ -87,6 +88,7 @@ namespace GUI_authentication_system
             SqlCommand cmd1 = new SqlCommand(query, connection);
             connection.Open();
             int number = 0;
+            cmd1.ExecuteNonQuery();
             foreach (var pb in this.Controls.OfType<PictureBox>().OrderBy(c=>c.Name))
             {
                 
@@ -108,9 +110,11 @@ namespace GUI_authentication_system
             
             try 
             {
-                cmd1.ExecuteNonQuery();
+                
                 Status.Text = "Connection Successfully";
                 connection.Close();
+                Form2 frm = new Form2();
+                frm.ShowDialog();
             }catch(SqlException error)
             {
                 // MessageBox.Show("DB Connection Failed");
@@ -202,6 +206,12 @@ namespace GUI_authentication_system
                 pictureBox6.Size = new System.Drawing.Size(100, 32);
                 pictureBox6.Tag = 0;
             }
+        }
+
+        private void logInBtn_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.ShowDialog();
         }
     }
 }

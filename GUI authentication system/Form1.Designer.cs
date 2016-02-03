@@ -47,6 +47,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.logInBtn = new System.Windows.Forms.Button();
             this.statusBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -142,6 +143,7 @@
             // SubmitBtn
             // 
             this.SubmitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SubmitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SubmitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitBtn.ForeColor = System.Drawing.Color.Transparent;
             this.SubmitBtn.Location = new System.Drawing.Point(50, 295);
@@ -172,7 +174,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
             this.pictureBox5.ImageLocation = "Desktop/10999525_856381197741202_8803115981809302337_n.jpg";
             this.pictureBox5.Location = new System.Drawing.Point(325, 267);
             this.pictureBox5.Name = "pictureBox5";
@@ -186,7 +188,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
             this.pictureBox4.ImageLocation = "Desktop/10982486_848584431854212_7586413611598786777_n.jpg";
             this.pictureBox4.Location = new System.Drawing.Point(325, 213);
             this.pictureBox4.Name = "pictureBox4";
@@ -200,7 +202,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
             this.pictureBox3.ImageLocation = "Desktop/10921704_852292771483378_2006541120_n.jpg";
             this.pictureBox3.Location = new System.Drawing.Point(325, 165);
             this.pictureBox3.Name = "pictureBox3";
@@ -214,6 +216,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
             this.pictureBox2.ImageLocation = "";
             this.pictureBox2.Location = new System.Drawing.Point(325, 117);
             this.pictureBox2.Name = "pictureBox2";
@@ -227,6 +230,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.Location = new System.Drawing.Point(325, 73);
             this.pictureBox1.Name = "pictureBox1";
@@ -240,6 +244,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.ErrorImage")));
             this.pictureBox6.Location = new System.Drawing.Point(325, 319);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 32);
@@ -248,12 +253,27 @@
             this.pictureBox6.Tag = "0";
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // logInBtn
+            // 
+            this.logInBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.logInBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.logInBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logInBtn.Location = new System.Drawing.Point(182, 295);
+            this.logInBtn.Name = "logInBtn";
+            this.logInBtn.Size = new System.Drawing.Size(100, 36);
+            this.logInBtn.TabIndex = 17;
+            this.logInBtn.Text = "Sign In";
+            this.logInBtn.UseVisualStyleBackColor = false;
+            this.logInBtn.Click += new System.EventHandler(this.logInBtn_Click);
+            // 
             // registrationBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(490, 386);
+            this.Controls.Add(this.logInBtn);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.SubmitBtn);
@@ -307,6 +327,7 @@
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.ToolStripStatusLabel Status;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button logInBtn;
 
     }
 }

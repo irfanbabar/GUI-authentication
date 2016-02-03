@@ -59,25 +59,5 @@ namespace GUI_authentication_system.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _10982486_848584431854212_7586413611598786777_n {
-            get {
-                object obj = ResourceManager.GetObject("10982486_848584431854212_7586413611598786777_n", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _10982486_848584431854212_7586413611598786777_n1 {
-            get {
-                object obj = ResourceManager.GetObject("10982486_848584431854212_7586413611598786777_n1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
