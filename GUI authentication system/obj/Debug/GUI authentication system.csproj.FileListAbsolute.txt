@@ -9,3 +9,14 @@ c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication 
 c:\users\furqan nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.pdb
 C:\Users\Furqan Nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Form2.resources
 C:\Users\Furqan Nadeem\documents\visual studio 2013\Projects\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Form3.resources
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\bin\Debug\GUI authentication system.exe.config
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.exe
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.pdb
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\bin\Debug\GUI authentication system.exe
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\bin\Debug\GUI authentication system.pdb
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.csprojResolveAssemblyReference.cache
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.registrationBox.resources
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Form2.resources
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Form3.resources
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI_authentication_system.Properties.Resources.resources
+C:\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\obj\Debug\GUI authentication system.csproj.GenerateResource.Cache

@@ -28,8 +28,8 @@ namespace GUI_authentication_system
         private void Form3_Load(object sender, EventArgs e)
         {
 
-            string ServerInformation = "server=FURQANNADEEM-PC; Trusted_Connection=yes;" +
-                                     "database=GUIDATABASE; connection timeout=30;";
+            string ServerInformation = "server=LAPPO-PC\\SQLEXPRESS; Trusted_Connection=yes;" +
+                                      "database=GUIDATABASE; connection timeout=30;";
             SqlConnection connection = new SqlConnection(ServerInformation);
 
             string query1 = "select * from Users";
@@ -41,6 +41,7 @@ namespace GUI_authentication_system
 
             if (rdr.Read() == true)
             {
+                
                 while (rdr.Read())
                 {
                   MessageBox.Show("Name: " + rdr[1].ToString() + "\nEmail: " + rdr[3].ToString() + "\nRole: " + rdr[4].ToString());
@@ -53,6 +54,11 @@ namespace GUI_authentication_system
             connection.Close();
             opener.Close();
             this.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

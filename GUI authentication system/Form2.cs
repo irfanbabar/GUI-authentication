@@ -24,25 +24,23 @@ namespace GUI_authentication_system
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            pictureBox1.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10350990_856380721074583_5549273632151111387_n.jpg");
-            pictureBox1.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10350990_856380721074583_5549273632151111387_n.jpg";
+            pictureBox1.Image = Image.FromFile(@"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10350990_856380721074583_5549273632151111387_n.jpg");
+            pictureBox1.ImageLocation = @"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10350990_856380721074583_5549273632151111387_n.jpg";
 
-            pictureBox2.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10521377_856381414407847_6994074695486298470_n.jpg");
-            pictureBox2.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10521377_856381414407847_6994074695486298470_n.jpg";
+            pictureBox2.Image = Image.FromFile(@"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10521377_856381414407847_6994074695486298470_n.jpg");
+            pictureBox2.ImageLocation = @"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10521377_856381414407847_6994074695486298470_n.jpg";
 
+            pictureBox3.Image = Image.FromFile(@"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10982486_848584431854212_7586413611598786777_n.jpg");
+            pictureBox3.ImageLocation = @"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10982486_848584431854212_7586413611598786777_n.jpg";
 
-            pictureBox3.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10999525_856381197741202_8803115981809302337_n.jpg");
-            pictureBox3.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10999525_856381197741202_8803115981809302337_n.jpg";
+            pictureBox4.Image = Image.FromFile(@"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10999525_856381197741202_8803115981809302337_n.jpg");
+            pictureBox4.ImageLocation = @"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\10999525_856381197741202_8803115981809302337_n.jpg";
 
+            pictureBox5.Image = Image.FromFile(@"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\11005712_877783125598564_1226127916_n.jpg");
+            pictureBox5.ImageLocation = @"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\11005712_877783125598564_1226127916_n.jpg";
 
-            pictureBox4.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10982486_848584431854212_7586413611598786777_n.jpg");
-            pictureBox4.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\10982486_848584431854212_7586413611598786777_n.jpg";
-
-            pictureBox5.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11005712_877783125598564_1226127916_n.jpg");
-            pictureBox5.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11005712_877783125598564_1226127916_n.jpg";
-
-            pictureBox6.Image = Image.FromFile(@"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11008933_852292438150078_241601339_n.jpg");
-            pictureBox6.ImageLocation = @"\Users\Furqan Nadeem\Documents\Visual Studio 2013\Projects\GUI authentication system\GUI authentication system\Images\11008933_852292438150078_241601339_n.jpg";
+            pictureBox6.Image = Image.FromFile(@"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\11008933_852292438150078_241601339_n.jpg");
+            pictureBox6.ImageLocation = @"\Users\lappo\Projects\GUI-authentication\Fall 2015_CS619_895_3352_F15CS61995A00\GUI authentication system\GUI authentication system\Images\11008933_852292438150078_241601339_n.jpg";
                        
             opener.Close();
             this.ShowDialog();
@@ -53,7 +51,7 @@ namespace GUI_authentication_system
            
             
 
-            string ServerInformation = "server=FURQANNADEEM-PC; Trusted_Connection=yes;" +
+            string ServerInformation = "server=LAPPO-PC\\SQLEXPRESS; Trusted_Connection=yes;" +
                                       "database=GUIDATABASE; connection timeout=30;";
             SqlConnection connection = new SqlConnection(ServerInformation);
 
